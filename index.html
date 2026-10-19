@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LifeOS</title>
+<meta name="theme-color" content="#1d4ed8">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./assets/icon-192.png">
+<link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<a class="skip" href="#view">Skip to content</a>
+<div class="shell">
+  <nav class="nav" aria-label="Main">
+    <div class="brand">LifeOS</div>
+    <ul id="navList"></ul>
+    <button id="syncStatus" class="syncbadge" type="button" aria-live="polite" hidden></button>
+  </nav>
+  <main id="view" tabindex="-1"></main>
+</div>
+<div id="banner" class="banner" role="alert" hidden></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<dialog id="onboard" aria-labelledby="onboardTitle"></dialog>
+<noscript>LifeOS needs JavaScript enabled.</noscript>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
